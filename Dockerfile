@@ -29,7 +29,7 @@ ADD conf/cloud9.conf /etc/supervisor/conf.d/
 
 # ------------------------------------------------------------------------------
 # Install platformIO
-RUN apt-get install -y python3
+RUN apt-get install -y python3 python3-dev python3-pip
 RUN sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
 # ------------------------------------------------------------------------------
